@@ -1,0 +1,33 @@
+.navbar {
+  backdrop-filter: blur(10px);
+  .navbar-brand {
+    font-weight: 600;
+  }
+
+  .navbar-nav {
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.hover-transform {
+  transition: $transition-500;
+}
+
+.hover-transform:hover {
+  transform: rotate(360deg);
+}
+
+.btn-none {
+  border: none;
+  outline: none;
+  background: transparent;
+  border-radius: 6px;
+  transition: $transition-300;
+  padding: 6px 12px;
+
+  &:hover {
+    background: $hover-bg;
+  }
+}

@@ -1,0 +1,38 @@
+[data-theme="dark"] {
+  background: $dark;
+  color: $white;
+  transition: $transition-500;
+
+  .pi {
+    color: $white;
+  }
+  
+  .btn-none {
+    .nav-link {
+      color: $white;
+
+      &:hover {
+        color: $dark;
+        i {
+          color: $dark;
+        }
+      }
+    }
+  }
+}
+[data-theme="light"] {
+  background: $light;
+  transition: $transition-500;
+
+  .bg-dark {
+    background-color: rgba(255, 255, 255, 0.36) !important;
+
+    .nav-link, .navbar-brand {
+      color: $dark;
+    }
+
+    .navbar-toggler {
+      color: $dark;
+    }
+  }
+}
